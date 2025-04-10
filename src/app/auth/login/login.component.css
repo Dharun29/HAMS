@@ -1,0 +1,144 @@
+/* login.component.css */
+ 
+html,
+body {
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-image: url('https://mir-s3-cdn-cf.behance.net/projects/404/76558961294119.Y3JvcCw2MzEsNDk0LDMyOCwxODU.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-blend-mode: overlay;
+}
+ 
+.auth-container {
+  position: relative;
+  width: 80%;
+  max-width: 400px;
+  padding: 30px;
+  border: 2px solid #81D4FA;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  box-sizing: border-box;
+}
+ 
+.auth-container h2 {
+  font-weight: 300;
+  font-size: 2.5em;
+  text-align: center;
+  color: #1976D2;
+  margin-bottom: 20px;
+}
+ 
+.form-group {
+  margin-bottom: 25px; /* Increased spacing */
+}
+ 
+label {
+  display: block;
+  margin-bottom: 8px;  /* Increased spacing */
+  font-weight: bold;
+  color: #212121;
+  font-size: 1.1em;
+}
+ 
+input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #BDBDBD;
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1em;
+  color: #424242;
+}
+ 
+input:focus {
+  outline: none;
+  border-color: #1E88E5;
+  box-shadow: 0 0 6px rgba(30, 136, 229, 0.5);
+}
+ 
+button {
+  width: 100%;
+  padding: 12px;
+  font-size: 1.1em;
+  border: none;
+  border-radius: 4px;
+  background-color: #1976D2;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px; /* Added spacing before button */
+}
+ 
+button:hover {
+  background-color: #1565C0;
+}
+ 
+p {
+  text-align: center;
+  margin-top: 15px;
+  color: #546E7A;
+  font-size: 0.9em;
+}
+ 
+a {
+  color: #1E88E5;
+  text-decoration: none;
+  font-weight: bold;
+}
+ 
+a:hover {
+  text-decoration: underline;
+}
+ 
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+  .auth-container {
+    width: 90%;
+    padding: 25px;
+  }
+ 
+  .auth-container h2 {
+    font-size: 2em;
+  }
+ 
+  label {
+    font-size: 1em;
+  }
+ 
+  input,
+  button {
+    font-size: 0.95em;
+  }
+}
+ 
+@media (max-width: 480px) {
+  .auth-container {
+    width: 95%;
+    padding: 20px;
+  }
+ 
+  .auth-container h2 {
+    font-size: 1.8em;
+  }
+ 
+  label {
+    font-size: 0.9em;
+  }
+ 
+  input,
+  button {
+    font-size: 0.9em;
+  }
+}

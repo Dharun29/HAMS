@@ -1,0 +1,23 @@
+<body>
+  <div class="auth-container">
+    <h2>User Registration</h2>
+    <form (ngSubmit)="onRegister()">
+      <label>Username</label>
+      <input type="text" [(ngModel)]="username" name="username" placeholder="Enter username" />
+  
+      <label>Password</label>
+      <input type="password" [(ngModel)]="password" name="password" placeholder="Enter password" />
+  
+      <label>Role</label>
+      <select [(ngModel)]="role" name="role">
+        <option value="" disabled selected>Select role</option>
+        <option value="Doctor">Doctor</option>
+        <option value="Patient">Patient</option>
+      </select>
+  
+      <button type="submit">Register</button>
+      <p> Already an User<a routerLink="/login">Login</a></p>
+    </form>
+  </div>
+</body>
+  
