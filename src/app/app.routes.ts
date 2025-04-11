@@ -14,10 +14,13 @@ export const routes: Routes = [
   { path: 'login', component: LoginComponent },
   { path: 'register', component: RegisterComponent },
   {path:'welcome',component:WelcomeComponent},
-  { path: 'patient/dashboard', component: PatientDashboardComponent, canActivate: [AuthGuard], data: { roles: ['Patient'] } },
-  { path: 'doctor/dashboard', component: DoctorDashboardComponent, canActivate: [AuthGuard], data: { roles: ['Doctor'] } },
+  { path: 'patientdashboard', component: PatientDashboardComponent } ,
+  { path: 'doctordashboard', component: DoctorDashboardComponent },
   { path: '**', redirectTo: '/login', pathMatch: 'full' } 
 ];
+
+  //{ path: 'default-dashboard', component: DefaultDashboardComponent }, // Added default dashboard route
+  
 
 
  
